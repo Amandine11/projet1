@@ -1,28 +1,100 @@
+.container{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media(min-width: 576px){
+	.container{
+		max-width: 540px;
+	}
+	.gauche
+	{
+		max-width: 194px;
+	}
+	.droite
+	{
+		max-width: 346px;
+	}
+	.table1
+	{
+		margin-left:108px;
+	}
+	.table2
+	{
+		margin-left:75px;
+	}
+}
+@media(min-width: 768px){
+	.container{
+		max-width: 720px;
+	}
+	.gauche
+	{
+		max-width: 259px;
+	}
+	.droite
+	{
+		max-width: 461px;
+	}
+	.table1
+	{
+		margin-left:144px;
+	}
+	.table2
+	{
+		margin-left:100px;
+	}
+}
+@media(min-width: 992px){
+	.container{
+		max-width: 920px;
+	}
+	.gauche
+	{
+		max-width: 331px;
+	}
+	.droite
+	{
+		max-width: 589px;
+	}
+	.table1
+	{
+		margin-left:194px;
+	}
+	.table2
+	{
+		margin-left:128px;
+	}
+}
+@media(min-width: 1200px){
+	.container{
+		max-width: 1140px;
+	}
+	.table1
+	{
+		margin-left:230px;
+	}
+	.table2
+	{
+		margin-left:160px;
+	}
+}
 #entete
 	{
+
 	background-color : #000000;
-	height : 145px;
 	border : thin black solid;
-	min-height : 195px;
-	min-width : 700px
 	}	
 #corps
 	{
-	min-height : 650px;
-	min-width : 700px;
-	margin-left : 20px;
-	margin-right : 20px;
-	margin-top : 0px;
 	background-color : #d7d5d5;
 	padding: 15px;
 	}
 #Pied_de_Page
 	{
 	background-color : #000000;
-	min-width : 730px;
-	min-height : 50px;
-	margin-left : 20px;
-	margin-right : 20px;
 	border : thin black solid; 
 	color : white;
 	text-align:center;
@@ -59,14 +131,10 @@ th,td
 	text-align: center;
 	border: thin solid black;
 	}
-.gauche
-	{
-	float : left;
-	}
+
 .droite
 	{
 	position : absolute;
-	margin-left : 100px;
 	}
 .textepiedpage
 	{
@@ -84,14 +152,6 @@ th,td
 	margin-left: 20px;
 	position:relative;
 	top:3px;
-	}
-.table1
-	{
-	margin-left:230px;
-	}
-.table2
-	{
-	margin-left:160px;
 	}
 .grey
 	{
