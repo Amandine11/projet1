@@ -11,12 +11,12 @@
 	
 	<body>
 	
-		<div id="entete">
-		<img class="gauche" src="../Images/Logo.jpg" height="195" alt="monLogo">
-		<img class="droite" src="../Images/Logo2.png" height="195" alt="logo2">
+		<div id="entete" class="container">
+		<img class="gauche" class="container" class="img-fluid" src="../Images/Logo.jpg" height="195" alt="monLogo">
+		<img class="droite" class="container" class="img-fluid" src="../Images/Logo2.png" height="195" alt="logo2">
 		</div>
 		
-		<div id="corps">
+		<div id="corps" class="container">
 				<a href="../index.html"><img src="../Images/Accueil1.png" class="boutonMenu" alt="accueil" onmouseover="this.src='../Images/Accueil2.png'" onmouseout="this.src='../Images/Accueil1.png'"/></a>
 				<a href="Presentation.html"><img src="../Images/Presentation1.png" class="boutonMenu" alt="Présentation" onmouseover="this.src='../Images/Presentation2.png'" onmouseout="this.src='../Images/Presentation1.png'"/></a>
 				<a href="CadreDeVie.html"><img src="../Images/CadreDeVie1.png" class="boutonMenu" alt="Cadre de Vie" onmouseover="this.src='../Images/CadreDeVie2.png'" onmouseout="this.src='../Images/CadreDeVie1.png'"/></a>
@@ -35,23 +35,52 @@
 			  <h2><img class="puce" src="../Images/puce.png" height="20" alt="monLogo"> directeurs d&eacute;l&eacute;gu&eacute;s aux formations professionnelles et technologiques (DDFPT)</h2>
 			  <p>Monsieur LEDUC Christophe<br />
 			  Tél. : 02 35 56 39 05<br />
-			  Fax : 02 35 95 87 04<br />
+			  Fax : 02 35 95 87 04<br /> 
 			  E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;jean-luc&#46;joriaux&#64;ac&#45;rouen&#46;fr">christophe.leduc&#64;ac&#45;normandie&#46;fr</a>
 			  </p>
 			  
 			  <h2><img class="puce" src="../Images/puce.png" height="20" alt="monLogo"> Professeurs</h2>
-			  <p>M. Pisak<br />
-			  E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;sebastien&#46;pisak&#64;ac&#45;normanide&#46;fr">sebastien&#46;pisak&#64;ac&#45;normanide&#46;fr</a><br />
-			  M. Voisin<br/>
-			  E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;jean-christophe&#46;voisin&#64;ac&#45;normanide&#46;fr">jean-christophe&#46;voisin&#64;ac&#45;normanide&#46;fr</a><br />
-			  M. Beriouche<br/>
-			  E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;achour&#46;beriouche&#64;ac&#45;normanide&#46;fr">achour&#46;beriouche&#64;ac&#45;normanide&#46;fr</a><br />
-			  M. Trufley<br/>
-			  E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;matthieu&#46;trufley&#64;ac&#45;normanide&#46;fr">matthieu&#46;trufley&#64;ac&#45;normanide&#46;fr</a><br /><br />
-			   </p>
+			 <fieldset>
+			  	<legend> M. Pisak</legend>
+			  	E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;sebastien&#46;pisak&#64;ac&#45;normanide&#46;fr">sebastien&#46;pisak&#64;ac&#45;normandie&#46;fr</a><br />
+			 </fieldset> 
+			 <fieldset>
+			  	<legend>M. Voisin</legend>
+			 	E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;jean-christophe&#46;voisin&#64;ac&#45;normanide&#46;fr">jean-christophe&#46;voisin&#64;ac&#45;normandie&#46;fr</a><br />
+			</fieldset> 
+			<fieldset>
+					<legend>M. Beriouche</legend>
+					E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;achour&#46;beriouche&#64;ac&#45;normanide&#46;fr">achour&#46;beriouche&#64;ac&#45;normandie&#46;fr</a><br />						
+			</fieldset>
+			<fieldset>
+			  	<legend>M. Beriouche</legend>
+			 	E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;achour&#46;beriouche&#64;ac&#45;normanide&#46;fr">achour&#46;beriouche&#64;ac&#45;normandie&#46;fr</a>
+			</fieldset>
+			 <fieldset>
+			 	<legend>M. Trufley</legend>
+			  	E-mail : <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;matthieu&#46;trufley&#64;ac&#45;normanide&#46;fr">matthieu&#46;trufley&#64;ac&#45;normandie&#46;fr</a>
+			</fieldset> 
+			
+			<h2><img class="puce" src="../Images/puce.png" height="20" alt="monLogo"> Discuter avec nous...</h2>
+			
+			   <div id="Formulaire_demande_information">
+					<fieldset>
+						<legend>Formulaire demande information: </legend> 
+						<label for="nom"> Nom</label>
+						<input type="text" name="nom" id="nom" /> </br>
+						<label for ="prenom">Prénom</label>
+						<input type="text" name="prenom" id="prenom" /> </br>
+						<label for="adresse-mail">Adresse Mail</label>
+						<input type="text" name="adresse-mail" id="adresse-mail" /> </br>
+						<textarea name="textarea">Votre message...</textarea> </br>
+						<input type="submit">
+
+					</fieldset>
+				</div>
 		</div>
 		
-		<div id="Pied_de_Page">
+		
+		<div id="Pied_de_Page" class="container">
 		<p><span class="textepiedpage"><a href="http://www.ac-rouen.fr/">Site rectorat</a> - <a href="http://lycees.ac-rouen.fr/queneau"> Site Lycée Raymond Queneau</a> - <a href="http://www.bts-sn-yvetot.fr/">Section BTS SN</a> - 2018
 					<!--<?php
 				include_once ('../compteur/compteur2.html');
